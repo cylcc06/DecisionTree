@@ -14,15 +14,14 @@ def showlogist(u,r):
 
     # ---------------------------------------------------
     # 将x主刻度标签设置为20的倍数(也即以 20为主刻度单位其余可类推)
-    xmajorLocator = MultipleLocator(1);
-
+    xmajorLocator = MultipleLocator(0.5);
     # 设置x轴标签文本的格式
     xmajorFormatter = FormatStrFormatter('%1.1f')
-
     # 将x轴次刻度标签设置为5的倍数
     xminorLocator = MultipleLocator(0.1)
+
     # 设定y 轴的主刻度间隔及相应的刻度间隔显示格式
-    #       将y轴主刻度标签设置为1.0的倍数
+    # 将y轴主刻度标签设置为1.0的倍数
     ymajorLocator = MultipleLocator(0.1)
     # 设置y轴标签文本的格式
     ymajorFormatter = FormatStrFormatter('%1.1f')
